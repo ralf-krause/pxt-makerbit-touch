@@ -4,7 +4,7 @@
 // Copyright (c) 2024 Ralf Krause, changes for Adafruit MPR121 Gator
 // MIT License
 
-// change touch pins for Adafruit
+// RK change touch pins for Adafruit TouchBoard
 const enum TouchSensor {
   T0 = 0b000000000001,
   T1 = 0b000000000010,
@@ -220,9 +220,9 @@ namespace makerbit {
     if (touchSensorBit === TouchSensor.Any) {
       return TouchSensor.Any;
     }
-
-    let bit = TouchSensor.T5;
-    for (let sensorIndex = 5; sensorIndex <= 16; sensorIndex++) {
+    // RK changed sensor index for Adafruit TouchBoard
+    let bit = TouchSensor.T0;
+    for (let sensorIndex = 0; sensorIndex <= 11; sensorIndex++) {
       if ((bit & touchSensorBit) !== 0) {
         return sensorIndex; // return first hit
       }
@@ -232,8 +232,9 @@ namespace makerbit {
   }
 
   function getTouchSensorFromIndex(index: number): TouchSensor {
-    if (5 <= index && index <= 16) {
-      return TouchSensor.T5 >> (index - 5);
+    // RK changed sensor index for Adafruit TouchBoard
+    if (0 <= index && index <= 11) {
+      return TouchSensor.T0 >> (index - 0);
     } else if (index === TouchSensor.Any) {
       return TouchSensor.Any;
     } else {
