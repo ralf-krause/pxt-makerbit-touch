@@ -1,7 +1,7 @@
 {
-    "name": "MakerBit-Touch",
-    "version": "1.2.24",
-    "description": "MPR121 capacitive touch sensor module for MakerBit",
+    "name": "TouchBoard",
+    "version": "1.2.25",
+    "description": "Blocks for TouchBoard with MPR121 capacitive touch sensor",
     "license": "MIT",
     "dependencies": {
         "core": "*",
@@ -10,7 +10,8 @@
     "files": [
         "README.md",
         "touch.ts",
-        "_locales/de/MakerBit-Touch-strings.json"
+        "_locales/de/MakerBit-Touch-strings.json",
+        "_locales/de/MakerBit-Touch-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
