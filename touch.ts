@@ -221,10 +221,10 @@ namespace makerbit {
       return TouchSensor.Any;
     }
     // RK changed sensor index for Adafruit TouchBoard
-    let bit = TouchSensor.T0;
+    let bit = TouchSensor.T11;
     for (let sensorIndex = 0; sensorIndex <= 11; sensorIndex++) {
       if ((bit & touchSensorBit) !== 0) {
-        return sensorIndex; // return first hit
+        return 11 - sensorIndex; // return first hit
       }
       bit >>= 1;
     }
