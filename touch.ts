@@ -1,5 +1,10 @@
-// MakerBit touch blocks
+// TouchBoard with MPR121 sensor
+// based on https://github.com/1010Technologies/pxt-makerbit
+// Copyright (c) 2018 Roger Wagner, Philipp Henkel
+// Copyright (c) 2024 Ralf Krause, changes for Adafruit MPR121 Gator
+// MIT License
 
+// change touch pins for Adafruit
 const enum TouchSensor {
   T0 = 0b000000000001,
   T1 = 0b000000000010,
