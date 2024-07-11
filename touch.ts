@@ -1,18 +1,18 @@
 // MakerBit touch blocks
 
 const enum TouchSensor {
-  T5 = 0b100000000000,
-  T6 = 0b010000000000,
-  T7 = 0b001000000000,
+  T0 = 0b000000000001,
+  T1 = 0b000000000010,
+  T2 = 0b000000000100,
+  T3 = 0b000000001000,
+  T4 = 0b000000010000,
+  T5 = 0b000000100000,
+  T6 = 0b000001000000,
+  T7 = 0b000010000000,
   T8 = 0b000100000000,
-  T9 = 0b000010000000,
-  T10 = 0b000001000000,
-  T11 = 0b000000100000,
-  T12 = 0b000000010000,
-  T13 = 0b000000001000,
-  T14 = 0b000000000100,
-  T15 = 0b000000000010,
-  T16 = 0b000000000001,
+  T9 = 0b001000000000,
+  T10 = 0b010000000000,
+  T11 = 0b100000000000,
   //% block="any"
   Any = 1 << 30,
 }
@@ -24,8 +24,8 @@ const enum TouchAction {
   Released = 1,
 }
 
-//% color=#0fbc11 icon="\u272a" block="MakerBit"
-//% category="MakerBit"
+//% color=#0fbc11 icon="\u272a" block="TouchBoard"
+//% category="TouchBoard"
 namespace makerbit {
   const MPR121_ADDRESS = 0x5A;
   const TOUCH_STATUS_PAUSE_BETWEEN_READ = 50;
@@ -62,7 +62,6 @@ namespace makerbit {
   /**
    * Initialize the touch controller.
    */
-  //% subcategory="Touch"
   //% blockId="makerbit_touch_init" block="initialize touch"
   //% weight=70
   function initTouchController(): void {
@@ -177,7 +176,6 @@ namespace makerbit {
    * @param action the trigger action
    * @param handler body code to run when the event is raised
    */
-  //% subcategory="Touch"
   //% blockId=makerbit_touch_on_touch_sensor
   //% block="on touch sensor | %sensor | %action"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
@@ -201,7 +199,6 @@ namespace makerbit {
    * Returns the sensor index of the last touch event that was received.
    * It could be either a sensor touched or released event.
    */
-  //% subcategory="Touch"
   //% blockId=makerbit_touch_current_touch_sensor
   //% block="touch sensor"
   //% weight=50
@@ -243,7 +240,6 @@ namespace makerbit {
    * Returns true if a specific touch sensor is currently touched. False otherwise.
    * @param sensor the touch sensor to be checked, eg: TouchSensor.T5
    */
-  //% subcategory="Touch"
   //% blockId=makerbit_touch_is_touch_sensor_touched
   //% block="touch sensor | %sensor | is touched"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
@@ -263,7 +259,6 @@ namespace makerbit {
    * Turns a TouchSensor into its index value.
    * @param sensor the touch sensor, eg: TouchSensor.T5
    */
-  //% subcategory="Touch"
   //% blockId=makerbit_touch_sensor_index
   //% block="%touchSensorIndex"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
@@ -277,7 +272,6 @@ namespace makerbit {
    * Returns true if a specific touch sensor is currently touched. False otherwise.
    * @param sensorIndex the touch sensor index to be checked
    */
-  //% subcategory="Touch"
   //% blockId="makerbit_touch_is_touch_sensor_index_touched"
   //% block="touch sensor | %sensorIndex=makerbit_touch_sensor_index | is touched"
   //% weight=42
@@ -288,7 +282,6 @@ namespace makerbit {
   /**
    * Returns true if any sensor was touched since the last call of this function. False otherwise.
    */
-  //% subcategory="Touch"
   //% blockId=makerbit_touch_was_any_sensor_touched
   //% block="any touch sensor was touched"
   //% weight=41
