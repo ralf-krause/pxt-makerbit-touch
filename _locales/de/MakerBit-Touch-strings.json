@@ -9,5 +9,5 @@
   "makerbit.touchSensor|block": "berührter Touchsensor",
   "makerbit.wasTouched|block": "beliebiger Touchsensor wurde berührt",
   "makerbit|block": "TouchBoard",
-  "{id:category}Makerbit": "TouchBoard"
+  "{id:category}TouchBoard": "TouchBoard"
 }
