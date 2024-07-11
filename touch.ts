@@ -29,7 +29,7 @@ const enum TouchAction {
   Released = 1,
 }
 
-//% color=#0fbc11 icon="\u272a" block="TouchBoard"
+//% color=#0fbc11 icon="\uf25a" block="TouchBoard"
 //% category="TouchBoard"
 namespace makerbit {
   const MPR121_ADDRESS = 0x5A;
