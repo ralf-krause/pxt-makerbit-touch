@@ -177,7 +177,7 @@ namespace makerbit {
 
   /**
    * Do something when a touch sensor is touched or released.
-   * @param sensor the touch sensor to be checked, eg: TouchSensor.T5
+   * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
    * @param action the trigger action
    * @param handler body code to run when the event is raised
    */
@@ -244,7 +244,7 @@ namespace makerbit {
 
   /**
    * Returns true if a specific touch sensor is currently touched. False otherwise.
-   * @param sensor the touch sensor to be checked, eg: TouchSensor.T5
+   * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
    */
   //% blockId=makerbit_touch_is_touch_sensor_touched
   //% block="touch sensor | %sensor | is touched"
@@ -263,7 +263,7 @@ namespace makerbit {
 
   /**
    * Turns a TouchSensor into its index value.
-   * @param sensor the touch sensor, eg: TouchSensor.T5
+   * @param sensor the touch sensor, eg: TouchSensor.T0
    */
   //% blockId=makerbit_touch_sensor_index
   //% block="%touchSensorIndex"
