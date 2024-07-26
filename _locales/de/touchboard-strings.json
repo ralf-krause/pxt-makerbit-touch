@@ -1,5 +1,8 @@
 {
   // Deutsche Texte für TouchBoard
   // Copyright (c) 2024 Ralf Krause
-
+  "TouchAction.Released|block": "losgelassen",
+  "TouchAction.Touched|block": "berührt",
+  "touchBoard|block": "TouchBoard",
+  "{id:category}TouchBoard": "TouchBoard"
 }

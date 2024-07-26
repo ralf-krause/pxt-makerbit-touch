@@ -29,7 +29,7 @@ const enum TouchAction {
     Released = 1,
 }
 
-//% color=#0fbc11 icon="\uf25a" block="TouchBoard"
+//% color=#369bb5 icon="\uf25a" block="TouchBoard"
 //% category="TouchBoard"
 namespace touchBoard {
     const MPR121_ADDRESS = 0x5A;
@@ -69,7 +69,7 @@ namespace touchBoard {
      */
     //% blockId="touchboard_touch_init" block="init touchBoard"
     //% weight=70
-    function initTouchController(): void {
+    export function initTouchController(): void {
         if (!!touchState) {
             return;
         }
