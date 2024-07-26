@@ -4,7 +4,7 @@
 // Copyright (c) 2024 Ralf Krause, changes for Adafruit MPR121 Gator
 // MIT License
 
-// sensor numbers for Adafruit TouchBoard
+// sensor numbers for the touchBoard
 const enum TouchSensor {
     T0 = 0b000000000001,
     T1 = 0b000000000010,
@@ -67,7 +67,9 @@ namespace touchBoard {
     /**
      * Initialize the touch controller.
      */
-    //% blockId="touchboard_touch_init" block="init touchBoard"
+    //% blockId="touchboard_touch_init" 
+    //% block="init TouchBoard || address %address"
+    //% address.defl = "0x5A"
     //% weight=70
     export function initTouchController(): void {
         if (!!touchState) {
