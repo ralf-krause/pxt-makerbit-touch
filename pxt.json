@@ -9,12 +9,22 @@
     },
     "files": [
         "README.md",
-        "touch.ts",
+        "touchboard.ts",
         "_locales/de/MakerBit-Touch-strings.json",
-        "_locales/de/MakerBit-Touch-jsdoc-strings.json"
+        "_locales/de/MakerBit-Touch-jsdoc-strings.json",
+        "_locales/de/touchboard-jsdoc-strings.json",
+        "_locales/de/touchboard-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": true
+    "public": true,
+    "targetVersions": {
+        "target": "6.0.41",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "tsprj"
 }
