@@ -29,6 +29,7 @@ const enum TouchAction {
     Released = 1,
 }
 
+
 //% color=#369bb5 icon="\uf25a" block="TouchBoard"
 //% category="TouchBoard"
 namespace touchBoard {
@@ -68,7 +69,7 @@ namespace touchBoard {
      * Initialize the touch controller.
      */
     //% blockId="touchboard_touch_init" 
-    //% block="init TouchBoard || address %address"
+    //% block="init touch controller %address"
     //% address.defl = 0x5A
     //% weight=70
     export function initTouchController(): void {
