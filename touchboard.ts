@@ -69,8 +69,7 @@ namespace touchBoard {
      * Initialize the touch controller.
      */
     //% blockId="touchboard_touch_init" 
-    //% block="init touch controller 0x%A"
-    //% address.defl = 0x5A
+    //% block="init touch controller 0x5A"
     //% weight=70
     export function initTouchController(): void {
         if (!!touchState) {
@@ -246,7 +245,7 @@ namespace touchBoard {
     }
 
     /**
-     * Returns true if a specific touch sensor is currently touched. False otherwise.
+     * Returns true if a specific touch sensor is currently touched. Otherwise false.
      * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
      */
     //% blockId=touchboard_is_touch_sensor_touched
