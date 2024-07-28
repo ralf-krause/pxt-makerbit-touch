@@ -1,10 +1,10 @@
 {
   "TouchAction.Released|block": "losgelassen",
   "TouchAction.Touched|block": "berührt",
-  "TouchSensor.Any|block": "beliebig",
+  "TouchSensor.Any|block": "any",
   "touchboard.isSensorTouched|block": "Touchsensor| %sensor | wird berührt",
-  "touchboard.isTouched|block": "Touchsensor | %sensorIndex=makerbit_touch_sensor_index | wird berührt",
-  "touchboard.onTouch|block": "wenn Touchsensor | %sensor | %action wird",
+  "touchboard.isTouched|block": "Touchsensor | %sensorIndex=touchboard_touch_sensor_index | wird berührt",
+  "touchboard.onTouch|block": "wenn Touchsensor | %sensor | %action | wird",
   "touchboard.touchSensorIndex|block": "%touchSensorIndex",
   "touchboard.touchSensor|block": "berührter Touchsensor",
   "touchboard.wasTouched|block": "beliebiger Touchsensor wurde berührt",
