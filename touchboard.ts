@@ -69,7 +69,7 @@ namespace touchBoard {
      * Initialize the touch controller.
      */
     //% blockId="touchboard_touch_init" 
-    //% block="init touch controller %address"
+    //% block="init touch controller"
     //% address.defl = 0x5A
     //% weight=70
     export function initTouchController(): void {
