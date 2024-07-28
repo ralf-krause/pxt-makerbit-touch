@@ -4,7 +4,7 @@
 // Copyright (c) 2024 Ralf Krause, changes for Adafruit MPR121 Gator
 // MIT License
 
-// sensor numbers for the touchBoard
+// sensor numbers for Adafruit TouchBoard
 const enum TouchSensor {
     T0 = 0b000000000001,
     T1 = 0b000000000010,
