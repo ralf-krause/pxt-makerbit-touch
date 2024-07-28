@@ -2,13 +2,13 @@
   "TouchAction.Released|block": "losgelassen",
   "TouchAction.Touched|block": "berührt",
   "TouchSensor.Any|block": "any",
+  "touchboard.initTouchController|block": "initialisiere TouchBoard",
   "touchboard.isSensorTouched|block": "Touchsensor| %sensor | wird berührt",
   "touchboard.isTouched|block": "Touchsensor | %sensorIndex=touchboard_touch_sensor_index | wird berührt",
-  "touchboard.onTouch|block": "wenn Touchsensor | %sensor | %action | wird",
+  "touchboard.onTouch|block": "wenn Touchsensor | %sensor | %action",
   "touchboard.touchSensorIndex|block": "%touchSensorIndex",
   "touchboard.touchSensor|block": "berührter Touchsensor",
   "touchboard.wasTouched|block": "beliebiger Touchsensor wurde berührt",
-  "touchboard.initTouchController|block": "initialisiere TouchBoard 0x5A",
   "touchboard|block": "TouchBoard",
   "{id:category}TouchBoard": "TouchBoard"
 }
