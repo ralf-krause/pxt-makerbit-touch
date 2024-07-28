@@ -69,7 +69,7 @@ namespace touchBoard {
      * Initialize the touch controller.
      */
     //% blockId="touchboard_touch_init" 
-    //% block="init touch controller"
+    //% block="init touch controller 0x%A"
     //% address.defl = 0x5A
     //% weight=70
     export function initTouchController(): void {
@@ -207,7 +207,7 @@ namespace touchBoard {
      * Returns the sensor index of the last touch event that was received.
      * It could be either a sensor touched or released event.
      */
-    //% blockId=touchboard_touch_current_touch_sensor
+    //% blockId=touchboard_current_touch_sensor
     //% block="touch sensor"
     //% weight=50
     export function touchSensor(): number {
@@ -249,7 +249,7 @@ namespace touchBoard {
      * Returns true if a specific touch sensor is currently touched. False otherwise.
      * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
      */
-    //% blockId=touchboard_touch_is_touch_sensor_touched
+    //% blockId=touchboard_is_touch_sensor_touched
     //% block="touch sensor | %sensor | is touched"
     //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
     //% sensor.fieldOptions.tooltips="false"
@@ -281,7 +281,7 @@ namespace touchBoard {
      * Returns true if a specific touch sensor is currently touched. False otherwise.
      * @param sensorIndex the touch sensor index to be checked
      */
-    //% blockId="touchboard_touch_is_touch_sensor_index_touched"
+    //% blockId="touchboard_is_touch_sensor_index_touched"
     //% block="touch sensor | %sensorIndex=touchboard_touch_sensor_index | is touched"
     //% weight=42
     export function isTouched(sensorIndex: number): boolean {
