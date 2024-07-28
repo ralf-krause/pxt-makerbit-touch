@@ -4,7 +4,7 @@
 // Copyright (c) 2024 Ralf Krause, changes for Adafruit MPR121 Gator
 // MIT License
 
-// RK changes for Adafruit TouchBoard
+// settings for Adafruit TouchBoard
 const enum TouchSensor {
   T0 = 0b000000000001,
   T1 = 0b000000000010,
@@ -31,7 +31,7 @@ const enum TouchAction {
 
 //% color=#0fbc11 icon="\uf25a" block="TouchBoard"
 //% category="TouchBoard"
-namespace makerbit {
+namespace touchboard {
   const MPR121_ADDRESS = 0x5A;
   const TOUCH_STATUS_PAUSE_BETWEEN_READ = 50;
 
@@ -67,7 +67,7 @@ namespace makerbit {
   /**
    * Initialize the touch controller.
    */
-  //% blockId="makerbit_touch_init" block="initialize touch"
+  //% blockId="touchboard_init" block="init touchboard"
   //% weight=70
   function initTouchController(): void {
     if (!!touchState) {
@@ -181,7 +181,7 @@ namespace makerbit {
    * @param action the trigger action
    * @param handler body code to run when the event is raised
    */
-  //% blockId=makerbit_touch_on_touch_sensor
+  //% blockId=touchboard_on_touch_sensor
   //% block="on touch sensor | %sensor | %action"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
   //% sensor.fieldOptions.tooltips="false"
@@ -204,7 +204,7 @@ namespace makerbit {
    * Returns the sensor index of the last touch event that was received.
    * It could be either a sensor touched or released event.
    */
-  //% blockId=makerbit_touch_current_touch_sensor
+  //% blockId=touchboard_current_touch_sensor
   //% block="touch sensor"
   //% weight=50
   export function touchSensor(): number {
@@ -246,7 +246,7 @@ namespace makerbit {
    * Returns true if a specific touch sensor is currently touched. False otherwise.
    * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
    */
-  //% blockId=makerbit_touch_is_touch_sensor_touched
+  //% blockId=touchboard_is_touch_sensor_touched
   //% block="touch sensor | %sensor | is touched"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
   //% sensor.fieldOptions.tooltips="false"
@@ -265,7 +265,7 @@ namespace makerbit {
    * Turns a TouchSensor into its index value.
    * @param sensor the touch sensor, eg: TouchSensor.T0
    */
-  //% blockId=makerbit_touch_sensor_index
+  //% blockId=touchboard_sensor_index
   //% block="%touchSensorIndex"
   //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
   //% sensor.fieldOptions.tooltips="false"
@@ -278,8 +278,8 @@ namespace makerbit {
    * Returns true if a specific touch sensor is currently touched. False otherwise.
    * @param sensorIndex the touch sensor index to be checked
    */
-  //% blockId="makerbit_touch_is_touch_sensor_index_touched"
-  //% block="touch sensor | %sensorIndex=makerbit_touch_sensor_index | is touched"
+  //% blockId="touchboard_is_touch_sensor_index_touched"
+  //% block="touch sensor | %sensorIndex=touchboard_sensor_index | is touched"
   //% weight=42
   export function isTouched(sensorIndex: number): boolean {
     return isSensorTouched(getTouchSensorFromIndex(sensorIndex));
@@ -288,7 +288,7 @@ namespace makerbit {
   /**
    * Returns true if any sensor was touched since the last call of this function. False otherwise.
    */
-  //% blockId=makerbit_touch_was_any_sensor_touched
+  //% blockId=touchboard_was_any_sensor_touched
   //% block="any touch sensor was touched"
   //% weight=41
   export function wasTouched(): boolean {
