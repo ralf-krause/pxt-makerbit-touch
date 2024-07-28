@@ -69,7 +69,7 @@ namespace touchBoard {
      * Initialize the touch controller.
      */
     //% blockId="touchboard_touch_init" 
-    //% block="init touch controller 0x5A"
+    //% block="init touch controller"
     //% weight=70
     export function initTouchController(): void {
         if (!!touchState) {
@@ -183,7 +183,7 @@ namespace touchBoard {
      * @param action the trigger action
      * @param handler body code to run when the event is raised
      */
-    //% blockId=touchboard_touch_on_touch_sensor
+    //% blockId=touchboard_on_touch_sensor
     //% block="on touch sensor | %sensor | %action"
     //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
     //% sensor.fieldOptions.tooltips="false"
@@ -277,7 +277,7 @@ namespace touchBoard {
     }
 
     /**
-     * Returns true if a specific touch sensor is currently touched. False otherwise.
+     * Returns true if a specific touch sensor is currently touched. Otherwise false.
      * @param sensorIndex the touch sensor index to be checked
      */
     //% blockId="touchboard_is_touch_sensor_index_touched"
@@ -288,7 +288,7 @@ namespace touchBoard {
     }
 
     /**
-     * Returns true if any sensor was touched since the last call of this function. False otherwise.
+     * Returns true if any sensor was touched since the last call of this function. Otherwise false.
      */
     //% blockId=touchboard_touch_was_any_sensor_touched
     //% block="any touch sensor was touched"
