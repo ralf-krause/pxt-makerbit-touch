@@ -220,7 +220,7 @@ namespace touchboard {
     if (touchSensorBit === TouchSensor.Any) {
       return TouchSensor.Any;
     }
-    // RK changed sensor index for Adafruit TouchBoard
+    // sensor index for Adafruit TouchBoard
     let bit = TouchSensor.T11;
     for (let sensorIndex = 0; sensorIndex <= 11; sensorIndex++) {
       if ((bit & touchSensorBit) !== 0) {
@@ -232,7 +232,7 @@ namespace touchboard {
   }
 
   function getTouchSensorFromIndex(index: number): TouchSensor {
-    // RK changed sensor index for Adafruit TouchBoard
+    // sensor index for Adafruit TouchBoard
     if (0 <= index && index <= 11) {
       return TouchSensor.T0 >> (index - 0);
     } else if (index === TouchSensor.Any) {
