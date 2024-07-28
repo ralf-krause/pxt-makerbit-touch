@@ -248,12 +248,12 @@ namespace touchBoard {
      * Returns true if a specific touch sensor is currently touched. Otherwise false.
      * @param sensor the touch sensor to be checked, eg: TouchSensor.T0
      */
-    //% blockId=touchboard_is_touch_sensor_touched
+    //% blockId=touchboard_touch_sensor_is_touched
     //% block="touch sensor | %sensor | is touched"
     //% sensor.fieldEditor="gridpicker" sensor.fieldOptions.columns=6
     //% sensor.fieldOptions.tooltips="false"
     //% weight=40
-    //% blockHidden=true
+    //% blockHidden=false
     export function isSensorTouched(sensor: TouchSensor): boolean {
         initTouchController();
         if (sensor === TouchSensor.Any) {
@@ -283,6 +283,7 @@ namespace touchBoard {
     //% blockId="touchboard_is_touch_sensor_index_touched"
     //% block="touch sensor | %sensorIndex=touchboard_touch_sensor_index | is touched"
     //% weight=42
+    //% blockHidden=true
     export function isTouched(sensorIndex: number): boolean {
         return isSensorTouched(getTouchSensorFromIndex(sensorIndex));
     }
