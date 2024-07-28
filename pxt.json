@@ -1,6 +1,6 @@
 {
     "name": "pxt-touchboard",
-    "version": "1.2.25",
+    "version": "1.2.26",
     "description": "Blocks for TouchBoard with MPR121 capacitive touch sensor",
     "license": "MIT",
     "dependencies": {
@@ -10,8 +10,6 @@
     "files": [
         "README.md",
         "touchboard.ts",
-        "_locales/de/MakerBit-Touch-strings.json",
-        "_locales/de/MakerBit-Touch-jsdoc-strings.json",
         "_locales/de/pxt-touchboard-jsdoc-strings.json",
         "_locales/de/pxt-touchboard-strings.json"
     ],
